@@ -1,1 +1,2 @@
-Test commit
+NPM RUN BUILD
+NPM RUN DEPLOY

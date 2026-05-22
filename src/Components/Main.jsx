@@ -6,10 +6,10 @@ import MPG_2 from "../Images/MPG_2.jpg";
 
 export default function About() {
   return (
-    <div>
-      <div className="flex flex-row md:flex-col items-center justify-center bg-black h-full p-10">
-        <div className="flex flex-row items-center justify-center">
-          <div className="w-1/2 h-1/2 p-5 mx-auto">
+    <div className=" bg-black">
+      <div className="flex flex-col items-center justify-center h-full p-10">
+        <div className="flex flex-col md:flex-row items-center justify-center">
+          <div className="w-full md:w-1/2 h-1/2 p-5 mx-auto">
             <img
               className="object-cover border-16 border-white"
               src={BCLogo}
@@ -17,7 +17,10 @@ export default function About() {
             />
           </div>
 
-          <div className="w-1/2 h-1/2 p-10 mx-auto" style={{ color: "#DOBD49" }}>
+          <div
+            className="w-full md:w-1/2 h-1/2 p-5 mx-auto"
+            style={{ color: "#DOBD49" }}
+          >
             <a
               className="p-0"
               href="https://www.youtube.com/watch?v=Np1iJRYXzUQ"
@@ -36,15 +39,15 @@ export default function About() {
           </div>
         </div>
 
-        <div className="flex flex-row items-center justify-evenly bg-black pt-30">
-          <div className="w-2/3 mx-auto">
+        <div className="flex flex-col md:flex-row items-center justify-evenly p-5">
+          <div className="w-full md:w-2/3 mx-auto">
             <img
-              className="border-8 border-white object-cover mx-auto w-7/8"
+              className="border-8 border-white object-cover mx-auto w-7/8 m-5"
               src={MPG_1}
               alt="News Article"
             />
           </div>
-          <div className="w-1/3 mx-auto">
+          <div className="w-full md:w-1/3 mx-auto m-5">
             <img
               className="border-8 border-white object-cover mx-auto w-3/4"
               src={MPG_2}
